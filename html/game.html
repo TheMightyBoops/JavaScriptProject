@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BarTender2088</title>
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link href="./../css/styles.css" rel="stylesheet" media="all">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./../javascript/game/Character.js"></script>
+    <script type="text/javascript" src="./../javascript/game/Scenario.js"></script>
+    <script type="text/javascript" src="./../javascript/game/GameInstance.js"></script>
+    <script type="text/javascript" src="./../javascript/game/cookies.js"></script>
+    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src=""></script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="game.html">Game</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+        <div id="title"><h1>
+            Soft Crash Games
+        </h1></div>
+    </header>
+    <div id="characterCreator">
+        <p id="Instructions">
+            Welcome to Bar Tender 2088
+            <br>
+            Fill in all of the fields and assign up to 9 stat points of your choosing. If you , <br>
+            have created a character in the last day just click 'create' to continue, if you want <br>
+            to use a different character click 'erase' and fill in the fields.
+        </p>
+        <form>
+            <p id="error"></p>
+            <label for="name">Character Name</label>
+            <input type="text" id="name" class="newCharacter" size="15">
+
+            <label for="age">Age</label>
+            <input type="text" id="age" class="newCharacter" size="3">
+
+            <label for="gender">Gender</label>
+            <input type="text" id="gender" class="newCharacter" size="10">
+
+            <label for="charisma">Charisma</label>
+            <input type="number" id="charisma" class="newCharacter" name="stats" size="1" value="0"
+            min="0" max="5">
+
+            <label for="luck">Luck</label>
+            <input type="number" id="luck" class="newCharacter" name="stats" size="1"
+                   value="0" min="0" max="5">
+
+            <label for="intelligence">Intelligence</label>
+            <input type="number" id="intelligence" class="newCharacter" name="stats" size="1" value="0"
+            min="0" max="5">
+            <p id="current">Current character: </p>
+            <input type= "button" value="Erase" id="erase">
+            <input type="button" value="Create" id="create">
+        </form>
+    </div>
+    <div id="scenario">
+        <p id="intro" class="game"></p>
+        <label for="yes" class="game" name="playerDecision">Of course.</label>
+        <input type="radio" id="yes" name="playerDecision" class="game" value="1">
+        <label for="no" class="game" name="playerDecision">No way.</label>
+        <input type="radio" id="no" name="playerDecision" class="game" value="0">
+        <p id="posNPDecision" class="game"></p>
+        <p id="negNPDecision" class="game"></p>
+        <p id="posRebuttal" class="game"></p>
+        <p id="negRebuttal" class="game"></p>
+        <p id="posNoEnding" class="game"></p>
+        <p id="negNoEnding" class="game"></p>
+        <input type="button" value="start" id="start" class="game">
+        <input type="button" value="next" id="next" class="game">
+        <p id="money"></p>
+    </div>
+    <footer>
+        <div id="contact">
+            <p>
+                SCGames Limited is a branch of Electronic Arts LLC.<br>
+                Phone: (242)322-8765<br>
+                Email us: SCGames@ea.biz<br>
+                &copy; 2013 EA<br>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
